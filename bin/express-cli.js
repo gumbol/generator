@@ -189,19 +189,19 @@ function createApplication (name, dir) {
   // copy css templates
   switch (program.css) {
     case 'less':
-      copyTemplateMulti('css', dir + '/public/stylesheets', '*.less')
+      copyTemplateMulti('css', dir + '/public/styles', '*.less')
       break
     case 'stylus':
-      copyTemplateMulti('css', dir + '/public/stylesheets', '*.styl')
+      copyTemplateMulti('css', dir + '/public/styles', '*.styl')
       break
     case 'compass':
-      copyTemplateMulti('css', dir + '/public/stylesheets', '*.scss')
+      copyTemplateMulti('css', dir + '/public/styles', '*.scss')
       break
     case 'sass':
-      copyTemplateMulti('css', dir + '/public/stylesheets', '*.sass')
+      copyTemplateMulti('css', dir + '/public/styles', '*.sass')
       break
     default:
-      copyTemplateMulti('css', dir + '/public/stylesheets', '*.css')
+      copyTemplateMulti('css', dir + '/public/styles', '*.css')
       break
   }
 
